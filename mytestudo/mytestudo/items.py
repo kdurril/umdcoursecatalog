@@ -26,6 +26,8 @@ class CourseItem(Item):
 
 class SectionItem(Item):
     # the next values are by sections
+    semester = Field()
+    course_number = Field()
     section_num = Field()
     section_instructor = Field()
     section_seats = Field()

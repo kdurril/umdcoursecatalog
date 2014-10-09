@@ -8,15 +8,34 @@ class TestudoSpider(BaseSpider):
     name = 'testudo'
     allowed_domains = ['ntst.umd.edu']
 
-    abbrlist = ['AASP', 'AAST', 'AGNR', 'AMSC', 'AMST', 'ANSC', 'ANTH', 'AOSC', 'ARAB', 'ARCH', 'AREC', 'ARHU', 'ARMY', 'ARSC', 'ARTH', 'ARTT', 'ASTR', 'BCHM', 'BEES', 'BIOE', 'BIOL', 'BIOM', 'BIPH', 'BISI', 'BMGT', 'BSCI', 'BSCV', 'BSGC', 'BSOS', 'BSST', 'BUAC', 'BUDT', 'BUFN', 'BULM', 'BUMK', 'BUMO', 'BUSI', 'CBMG', 'CCJS', 'CHBE', 'CHEM', 'CHIN', 'CHPH', 'CLAS', 'CLFS', 'CMLT', 'CMSC', 'COMM', 'CONS', 'CPSP', 'DANC', 'EALL', 'ECON', 'EDCI', 'EDCP', 'EDHD', 'EDHI', 'EDMS', 'EDPS', 'EDSP', 'EDUC', 'EMBA', 'ENAE', 'ENBE', 'ENCE', 'ENCH', 'ENCO', 'ENEE', 'ENES', 'ENFP', 'ENGL', 'ENMA', 'ENME', 'ENNU', 'ENPM', 'ENPP', 'ENRE', 'ENSE', 'ENSP', 'ENST', 'ENTM', 'ENTS', 'EPIB', 'FILM', 'FMSC', 'FOLA', 'FREN', 'GEMS', 'GEOG', 'GEOL', 'GERM', 'GREK', 'GVPT', 'HACS', 'HDCC', 'HEBR', 'HEIP', 'HESP', 'HHUM', 'HISP', 'HIST', 'HLSA', 'HLSC', 'HLTH', 'HONR', 'INAG', 'INFM', 'INST', 'ISRL', 'ITAL', 'IVSP', 'JAPN', 'JOUR', 'JWST', 'KNES', 'KORA', 'LARC', 'LASC', 'LATN', 'LBSC', 'LGBT', 'LING', 'MAIT', 'MATH', 'MEES', 'MIEH', 'MOCB', 'MUED', 'MUSC', 'MUSP', 'NACS', 'NFSC', 'NIAP', 'NIAS', 'PERS', 'PHIL', 'PHYS', 'PLSC', 'PORT', 'PSYC', 'PUAF', 'RDEV', 'RELS', 'RUSS', 'SLAA', 'SLAV', 'SLLC', 'SOCY', 'SPAN', 'SPHL', 'STAT', 'SURV', 'TDPS', 'THET', 'TOXI', 'UMEI', 'UNIV', 'URSP', 'USLT', 'VMSC', 'WMST']
+    abbrlist = ['AASP', 'AAST', 'AGNR', 'AMSC', 'AMST', 'ANSC', 'ANTH', 'AOSC',\
+                'ARAB', 'ARCH', 'AREC', 'ARHU', 'ARMY', 'ARSC', 'ARTH', 'ARTT',\
+                'ASTR', 'BCHM', 'BEES', 'BIOE', 'BIOL', 'BIOM', 'BIPH', 'BISI',\
+                'BMGT', 'BSCI', 'BSCV', 'BSGC', 'BSOS', 'BSST', 'BUAC', 'BUDT',\
+                'BUFN', 'BULM', 'BUMK', 'BUMO', 'BUSI', 'CBMG', 'CCJS', 'CHBE',\
+                'CHEM', 'CHIN', 'CHPH', 'CLAS', 'CLFS', 'CMLT', 'CMSC', 'COMM',\
+                'CONS', 'CPSP', 'DANC', 'EALL', 'ECON', 'EDCI', 'EDCP', 'EDHD',\
+                'EDHI', 'EDMS', 'EDPS', 'EDSP', 'EDUC', 'EMBA', 'ENAE', 'ENBE',\
+                'ENCE', 'ENCH', 'ENCO', 'ENEE', 'ENES', 'ENFP', 'ENGL', 'ENMA',\
+                'ENME', 'ENNU', 'ENPM', 'ENPP', 'ENRE', 'ENSE', 'ENSP', 'ENST',\
+                'ENTM', 'ENTS', 'EPIB', 'FILM', 'FMSC', 'FOLA', 'FREN', 'GEMS',\
+                'GEOG', 'GEOL', 'GERM', 'GREK', 'GVPT', 'HACS', 'HDCC', 'HEBR',\
+                'HEIP', 'HESP', 'HHUM', 'HISP', 'HIST', 'HLSA', 'HLSC', 'HLTH',\
+                'HONR', 'INAG', 'INFM', 'INST', 'ISRL', 'ITAL', 'IVSP', 'JAPN',\
+                'JOUR', 'JWST', 'KNES', 'KORA', 'LARC', 'LASC', 'LATN', 'LBSC',\
+                'LGBT', 'LING', 'MAIT', 'MATH', 'MEES', 'MIEH', 'MOCB', 'MUED',\
+                'MUSC', 'MUSP', 'NACS', 'NFSC', 'NIAP', 'NIAS', 'PERS', 'PHIL',\
+                'PHYS', 'PLSC', 'PORT', 'PSYC', 'PUAF', 'RDEV', 'RELS', 'RUSS',\
+                'SLAA', 'SLAV', 'SLLC', 'SOCY', 'SPAN', 'SPHL', 'STAT', 'SURV',\
+                'TDPS', 'THET', 'TOXI', 'UMEI', 'UNIV', 'URSP', 'USLT', 'VMSC',\
+                'WMST']
      
 
 
-    start_urls = ['''https://ntst.umd.edu/soc/''', '''https://ntst.umd.edu/soc/courses.html?term=201308&prefix=PUAF''']
+    #start_urls = ['''https://ntst.umd.edu/soc/''', '''https://ntst.umd.edu/soc/courses.html?term=201308&prefix=PUAF''']
     base_url = 'https://ntst.umd.edu/soc/'
-    term_url =  '''courses.html?term={term}&prefix={dept}'''.format(term="201308", dept="PUAF")
-    
-    #start_urls = [base_url+'''courses.html?term={term}&prefix={dept}'''.format(term="201308", dept=str(x)) for x in abbrlist]
+    term_url =  '''{term}/{dept}'''.format(term="201408", dept="PUAF")
+    start_urls = [base_url+'''{term}/{dept}'''.format(term="201408", dept=str(x)) for x in abbrlist]
 
 
     #rules = [Rule(SgmlLinkExtractor(allow=['/tor/\d+']), 'parse_torrent')]
@@ -75,6 +94,6 @@ class TestudoSpider(BaseSpider):
         #torrent['section_time_end'] = x.select('''//span[@class='class-end-time']/text()''').extract()
         #torrent['section_building'] = x.select('''//span[@class='building-code']/text()''').extract()
         #torrent['section_class_type'] = x.select('''//span[@class='clas-type']/text()''').extract()
-        yield row_list, items
+        return items
 
 

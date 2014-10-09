@@ -12,4 +12,4 @@ SPIDER_MODULES = ['mytestudo.spiders']
 NEWSPIDER_MODULE = 'mytestudo.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'mytestudo (+http://www.yourdomain.com)'
+USER_AGENT = 'mytestudo (http://www.umd.edu)'
