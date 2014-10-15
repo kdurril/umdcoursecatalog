@@ -1,0 +1,17 @@
+#No files ending in "o" or "a"
+*.[oa]
+#No files ending in tilde
+*~
+#No .pyc files
+*.pyc
+
+#This removes backend data
+*.csv
+*.db
+
+#No ipython notebook files
+#Might reconsider for documentation purposes
+*.ipynb
+
+#No virtual environment folder
+
