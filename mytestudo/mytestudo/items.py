@@ -8,15 +8,13 @@ from scrapy.item import Item, Field
 
 class DeptItem(Item):
 # define department fields
-    dept = Field()
-    dept_link = Field()
+    semester = Field()
     dept_short = Field()
     dept_long = Field()
-    course = Field()
-
 
 class CourseItem(Item):
 # define course
+    semester = Field()
     course_name = Field()
     course_title = Field()
     course_credit = Field()

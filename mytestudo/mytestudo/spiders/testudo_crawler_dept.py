@@ -8,8 +8,7 @@ class TestudoSpider(BaseSpider):
     name = 'testudo_dept'
     allowed_domains = ['ntst.umd.edu']
     start_urls = ['''https://ntst.umd.edu/soc/''']
-    #rules = [Rule(SgmlLinkExtractor(allow=['/tor/\d+']), 'parse_torrent')]
-
+    
     def parse(self, response):
         x = HtmlXPathSelector(response)
         
